@@ -11,17 +11,47 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/6f5637efc9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body >
-<div class="container-fluid">
-    <div class="row text-center">
-        <div class="col-12">
-            <img src="img/comingSoon.png" alt="coming soon image">
+<div class="container">
+    <div class="navbar navbar-fixed-left text-center">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img alt="logo" src="img/logo.jpg" class="rounded-circle w-100 mx-auto"></a>
         </div>
-
+        <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </div>
+    <div class="main">
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img src="img/bg.jpg" alt="Los Angeles">
+                <div class="carousel-caption">
+                    <h1 class=" mb-4">I am Vijaya Fernando</h1>
+                    <p class="intro-subtitle"><span class="text-slider-items"></span><strong class="text-slider"></strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+<script src="js/typed.js"></script>
+<script>
+    var typed_strings = 'Software Engineer,Web Developer,Web Designer';
+    var typed = new Typed('.text-slider', {
+        strings: typed_strings.split(','),
+        typeSpeed: 80,
+        loop: true,
+        backDelay: 1100,
+        backSpeed: 30
+    });
+</script>
 </body>
 </html>
