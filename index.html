@@ -12,7 +12,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/6f5637efc9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    
+
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body >
@@ -22,14 +23,14 @@
             <a class="navbar-brand" href="#"><img alt="logo" src="img/logo.jpg" class="rounded-circle w-100 mx-auto"></a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#">Skills</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
-    <div class="main">
-        <div class="carousel-inner">
+    <div class="main pl-5">
+        <div id="home" class="carousel-inner">
             <div class="carousel-item active ">
                 <img src="img/bg.jpg" alt="Los Angeles">
                 <div class="carousel-caption">
@@ -38,6 +39,44 @@
                 </div>
             </div>
         </div>
+
+        <div id="about" class="row animate-box" data-animate-effect="fadeInLeft">
+            <div class="col-md-12">
+                <div class="about-desc">
+                    <span class="heading-meta">About Me</span>
+                    <h2 class="colorlib-heading">Who Am I?</h2>
+                    <p><strong>Hi I'm Vijaya Fernando</strong> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+                <div class="services color-1">
+                    <span class="icon2"><i class="fas fa-lightbulb"></i></span>
+                    <h3>Graphic Design</h3>
+                </div>
+            </div>
+            <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+                <div class="services color-2">
+                    <span class="icon2"><i class="fas fa-globe"></i></span>
+                    <h3>Web Design</h3>
+                </div>
+            </div>
+            <div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+                <div class="services color-3">
+                    <span class="icon2"><i class="fas fa-database"></i></span>
+                    <h3>Software</h3>
+                </div>
+            </div>
+            <div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+                <div class="services color-4">
+                    <span class="icon2"><i class="fas fa-mobile-alt"></i></span>
+                    <h3>Application</h3>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
 </div>
